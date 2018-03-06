@@ -1,0 +1,41 @@
+import com.example.Libs
+
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+apply plugin: "kotlin-android-extensions"
+
+android {
+    compileSdkVersion Integer.parseInt(project.compileSdkVersion)
+
+    defaultConfig {
+        applicationId project.applicationId
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion Integer.parseInt(project.targetSdkVersion)
+        versionCode = project.versionCode
+        versionName project.versionName
+        buildConfigField "String", "BASE_URL", "\"https://jsonplaceholder.typicode.com\""
+    }
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+    }
+
+}
+
+kotlin {
+    experimental {
+        coroutines "enable"
+    }
+}
+
+dependencies {
+    api project(":net")
+    implementation Libs.kotlinStdlibJdk8
+    implementation Libs.kotlinxCoroutinesAndroid
+    implementation Libs.kotlinxCoroutinesCore
+    implementation Libs.appcompat
+    implementation Libs.cardview
+    implementation Libs.constraintLayout
+    implementation Libs.recyclerview
+    implementation Libs.rxandroid
+}

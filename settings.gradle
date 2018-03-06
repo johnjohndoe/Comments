@@ -1,0 +1,2 @@
+include ":buildSrc", ":app", ":api", ":net", ":store"
+

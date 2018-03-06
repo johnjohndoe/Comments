@@ -1,0 +1,26 @@
+import com.example.Libs
+
+apply plugin: "java-library"
+apply plugin: "kotlin"
+
+compileJava {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    compile Libs.kotlinStdlibJdk8
+    compile Libs.moshi
+    compile Libs.moshiKotlin
+    compile Libs.okhttp
+    compile Libs.okhttpLoggingInterceptor
+    compile Libs.retrofit
+    compile Libs.retrofitMoshi
+
+    testImplementation Libs.junit
+    testImplementation Libs.assertjCore
+}
+
+tasks.matching { it instanceof Test }.all {
+    testLogging.events = ["failed", "passed", "skipped"]
+}

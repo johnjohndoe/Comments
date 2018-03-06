@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#64b5f6</color>
+    <color name="colorPrimaryDark">#2286c3</color>
+    <color name="colorAccent">#f44336</color>
+
+    <color name="comment_author_name">@color/colorAccent</color>
+    <color name="comment_email_address">@color/colorPrimaryDark</color>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="comments_list_sorting_default_index" translatable="false">0</integer>
+    <integer name="comments_list_filtering_default_index" translatable="false">0</integer>
+
+</resources>

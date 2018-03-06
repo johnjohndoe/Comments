@@ -1,0 +1,24 @@
+import com.example.GradlePlugins
+
+apply plugin: "com.github.ben-manes.versions"
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath GradlePlugins.android
+        classpath GradlePlugins.gradleVersions
+        classpath GradlePlugins.kotlin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}

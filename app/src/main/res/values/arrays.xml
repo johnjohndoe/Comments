@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Sorting -->
+
+    <string-array name="comments_list_sorting_titles">
+        <item>ID descending</item>
+        <item>Email ascending</item>
+    </string-array>
+
+    <!-- Keep in sync with definition CommentDao! -->
+    <string-array name="comments_list_sorting_values" translatable="false">
+        <item>remote_id DESC</item>
+        <item>email_address ASC</item>
+    </string-array>
+
+    <!-- Filtering -->
+
+    <string-array name="comments_list_filtering_titles">
+        <item>All posts</item>
+        <item>Even post IDs</item>
+    </string-array>
+
+    <string-array name="comments_list_filtering_values" translatable="false">
+        <item>all_posts</item>
+        <item>even_post_ids</item>
+    </string-array>
+
+</resources>

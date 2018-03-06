@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Comments</string>
+    <string name="comment_post_id">
+        On post #<xliff:g example="13" id="postId">%1$d</xliff:g>:
+    </string>
+    <string name="comment_remote_id">
+        ID #<xliff:g example="42" id="postId">%1$d</xliff:g>:
+    </string>
+    <string name="comments_not_found">No comment found.</string>
+    <string name="comments_not_yet">No comment yet</string>
+    <string name="comments_error_loading">Error loading comments.</string>
+
+    <string name="connection_missing">Connection missing.</string>
+
+    <string name="comments_list_action_sort">Sort comments</string>
+    <string name="comments_list_action_filter">Filter comments</string>
+    <string name="comments_list_sorting_title">Choose sorting</string>
+    <string name="comments_list_filtering_title">Choose filtering</string>
+
+</resources>
